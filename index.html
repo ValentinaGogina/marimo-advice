@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marimo</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/picture/favicon_io/favicon-16x16.png">
+</head>
+<body class="fon">
+    <h1>Маримо желает</h1>
+    <!-- Персонализация -->
+    <div class="custom-field">
+      <input id="username" type="text" placeholder="Введите своё имя"/>
+      <label for="username" class="placeholder">Как я могу к вам обращаться?</label>
+    </div>
+    
+    <p id="advice">Нажми на кнопку, чтобы получить совет</p>
+    <img id="marimo-image" src="/picture/marimo (1).jpeg" alt="Маримо">
+    <!-- <button onclick="generateAdvice()">Получить совет</button> -->
+    <p>Пусть эти дружеские советы от маримо приносят тебе покой и вдохновение!</p>
+    
+    <!-- Счётчик -->
+    <div id="counter">Получено советов: 0</div>
+    <button onclick="generateAdvice()">Получить совет</button>
+    <button onclick="resetCounter()">Обнулить счётчик</button>
+    
+    <!-- История советов -->
+    <div id="history">
+      <h2>История советов</h2>
+      <ul id="advice-list"></ul>
+    </div>
+    
+    <!-- Ссылка на Telegram -->
+    <footer>
+      <a href="https://t.me/markmarimo" id="tgk" target="_blank">Перейти на канал "marimo"</a>
+    </footer>
+    
+    <!-- Подключение звука -->
+    <audio id="bubble-sound" src="/audio/bulk-bulknula-voda-32559.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
